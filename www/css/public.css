@@ -724,8 +724,8 @@ input[type=button],input[type=text],input[type=password]{-webkit-appearance:none
     #nav-1{
         position:fixed;
         width:50px;
-        bottom:150px;
-        right:100px;
+        bottom:10px;
+        right:20px;
     }
     #nav-1 ul li{
         width: 50px;
