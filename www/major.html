@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="/css/public.css">
+    <title>专业介绍</title>
+</head>
+<body>
+    <div class="index2-banner">
+        <div class="index2-banner-box clear">
+            <img src="/img/bg2.jpg">
+        </div>
+    </div>
+    <div class="list1-text" id="list" style="margin-bottom: 200px;">
+        <dl class="clear">
+            <dt>
+                <img src="">
+            </dt>
+            <dd>
+                <h1>影视传媒</h1>
+                <p>影视传媒</p>
+                <span>2018-08-23</span>
+                <video src="/video/music.mp4" controls="controls">
+                    您的浏览器无法播放此视频，请更新浏览器或系统。
+                </video>
+            </dd>
+        </dl>
+        <dl class="clear">
+            <dt>
+                <img src="">
+            </dt>
+            <dd>
+                <h1>音乐专业</h1>
+                <p>音乐专业</p>
+                <span>2018-08-23</span>
+                <video src="/video/music.mp4" controls="controls">
+                    您的浏览器无法播放此视频，请更新浏览器或系统。
+                </video>
+            </dd>
+        </dl>
+        <dl class="clear">
+            <dt>
+                <img src="">
+            </dt>
+            <dd>
+                <h1>舞蹈专业</h1>
+                <p>舞蹈专业</p>
+                <span>2018-08-23</span>
+                <video src="/video/wudao.mp4" controls="controls">
+                    您的浏览器无法播放此视频，请更新浏览器或系统。
+                </video>
+            </dd>
+        </dl>
+    </div>
+    <div id="nav-1" style="z-index: 999">
+        <ul>
+            <li class="nav-list">
+                <a href="/">
+                    <img src="/img/icon/nav-img5.png">
+                </a>
+            </li>
+            <!-- 
+                <li class="nav-list">
+                <a href="tel:一键拨号号码">
+                    <img src="/img/icon/nav-img4.png">
+                </a>
+            </li> -->
+            <li class="nav-list">
+                <a href="https://map.qq.com/?type=marker&isopeninfowin=1&markertype=1&pointx=112.92675126614036&pointy=28.1449987486561&name=%E4%BD%8D%E7%BD%AE%E5%AF%BC%E8%88%AA&addr=%E5%B2%B3%E9%BA%93%E5%8C%BA%E5%B7%A6%E4%BA%94%E8%B7%AF%E6%A6%A8%E6%A0%91%E6%B9%BE1%E5%8F%B7">
+                    <img src="/img/icon/nav-img3.png">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script>
+        window.onload = ()=>{
+            let aLi = document.querySelectorAll('#list li'),
+                aItem = document.querySelectorAll('.item');
+            for(let i = 0; i < aLi.length; i++){
+                aLi[i].onclick = ()=>{
+                    clear();
+                    aLi[i].className = 'bg';
+                    aItem[i].style.display = 'block';
+                };
+            }
+            function clear(){
+                for(let j = 0; j < aLi.length; j++){
+                    aLi[j].className = '';
+                    aItem[j].style.display = 'none';
+                }
+            }
+        };
+    </script>
+</body>
+</html>
